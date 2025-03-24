@@ -1,57 +1,32 @@
 ﻿@model IEnumerable<Atividade1.Models.Evento>
 
 @{
-    ViewData["Title"] = "Eventos";
+    ViewData["Title"] = "Lista de Eventos";
 }
 
-<div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">📅 Lista de Eventos</h2>
-        <a asp-action="Create" class="btn btn-primary">
-            <i class="bi bi-plus-circle"></i> Novo Evento
-        </a>
-    </div>
+<h1>Eventos</h1>
 
-    @if (!Model.Any())
-    {
-        <div class="alert alert-info" role="alert">
-            Nenhum evento cadastrado ainda.
+<p>
+    <a asp-action="Create" class="btn btn-primary">Adicionar Novo</a>
+</p>
+
+@foreach (var item in Model)
+{
+    <div class="card card-header m-1 p-1">
+        <div class="bg-transparent p-1">
+            <h4>
+                @item.Nome
+                <span class="btn btn-info" style="float:right">
+                    <small>@(item.Cadastrantes?.Count() ?? 0) participantes</small>
+                </span>
+            </h4>
+            <span>
+                <small>
+                    <a asp-action="Edit" asp-route-id="@item.EventoID">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.EventoID">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.EventoID">Excluir</a>
+                </small>
+            </span>
         </div>
-    }
-    else
-    {
-        <div class="table-responsive">
-            <table class="table table-hover table-bordered align-middle shadow-sm">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Nome</th>
-                        <th class="text-center">Participantes</th>
-                        <th class="text-center">Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var evento in Model)
-                    {
-                        <tr>
-                            <td>@evento.Nome</td>
-                            <td class="text-center">
-                                <span class="badge bg-success">@evento.Cadastrantes?.Count() ?? 0</span>
-                            </td>
-                            <td class="text-center">
-                                <a asp-action="Details" asp-route-id="@evento.EventoID" class="btn btn-sm btn-outline-info me-1">
-                                    <i class="bi bi-eye"></i> Detalhes
-                                </a>
-                                <a asp-action="Edit" asp-route-id="@evento.EventoID" class="btn btn-sm btn-outline-warning me-1">
-                                    <i class="bi bi-pencil"></i> Editar
-                                </a>
-                                <a asp-action="Delete" asp-route-id="@evento.EventoID" class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i> Excluir
-                                </a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    }
-</div>
+    </div>
+}

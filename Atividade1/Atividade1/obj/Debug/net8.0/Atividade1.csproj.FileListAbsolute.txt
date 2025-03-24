@@ -287,3 +287,4 @@ C:\Users\Pedro\Desktop\Facul\Celso\AtividadeCelso\Atividade1\Atividade1\obj\Debu
 C:\Users\Pedro\Desktop\Facul\Celso\AtividadeCelso\Atividade1\Atividade1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Pedro\Desktop\Facul\Celso\AtividadeCelso\Atividade1\Atividade1\bin\Debug\net8.0\Atividade1.pdb
 C:\Users\Pedro\Desktop\Facul\Celso\AtividadeCelso\Atividade1\Atividade1\obj\Debug\net8.0\ref\Atividade1.dll
+C:\Users\Pedro\Desktop\Facul\Celso\AtividadeCelso\Atividade1\Atividade1\bin\Debug\net8.0\libman.json

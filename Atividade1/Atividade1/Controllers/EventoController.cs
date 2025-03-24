@@ -36,14 +36,9 @@ public class EventoController : Controller
     [HttpPost]
     public IActionResult Create(Evento evento)
     {
-        if (ModelState.IsValid)
-        {
-            _context.Eventos.Add(evento);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
-
-        return View(evento);
+        _context.Add(evento);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
     }
 
     public IActionResult Edit(int id)
@@ -58,14 +53,9 @@ public class EventoController : Controller
     [HttpPost]
     public IActionResult Edit(Evento evento)
     {
-        if (ModelState.IsValid)
-        {
-            _context.Entry(evento).State = EntityState.Modified;
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
-
-        return View(evento);
+        _context.Entry(evento).State = EntityState.Modified;
+        _context.SaveChanges();
+        return RedirectToAction("Index");
     }
 
     public IActionResult Delete(int id)

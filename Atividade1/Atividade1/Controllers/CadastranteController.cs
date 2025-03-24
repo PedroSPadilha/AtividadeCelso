@@ -2,12 +2,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Imaging;
+using System.Drawing;
+using System.IO;
+
 
 namespace Atividade1.Controllers
 {
     public class CadastranteController : Controller
     {
-        private readonly Context _context;
+        public Context _context;
 
         public CadastranteController(Context context)
         {
@@ -34,25 +38,41 @@ namespace Atividade1.Controllers
         public IActionResult MostrarCertificado(int eventoId, int cadastranteId)
         {
             var cadastrante = _context.Cadastrantes
-            .Include(c => c.Evento)
-            .FirstOrDefault(c => c.CadastranteID == cadastranteId);
+                .Include(c => c.Evento)
+                .FirstOrDefault(c => c.CadastranteID == cadastranteId);
 
             if (cadastrante == null)
                 return NotFound("Cadastrante não encontrado.");
 
             if (cadastrante.EventoID != 1)
-                return BadRequest("Este participante não está inscrito neste evento.");
-
+                return BadRequest("Esse evento não tem certificado.");
 
             var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image", "certificado.jpg");
 
             if (!System.IO.File.Exists(path))
                 return NotFound("Certificado não encontrado.");
 
-            var contentType = "image/jpeg";
-            var fileBytes = System.IO.File.ReadAllBytes(path);
+            using (var image = Image.FromFile(path))
+            using (var graphics = Graphics.FromImage(image))
+            {
+                var font = new Font("Arial", 25, FontStyle.Bold);
+                var brush = new SolidBrush(Color.Black);
 
-            return File(fileBytes, contentType);
+                float x = 3700f;
+                float y = 3600f;
+
+                graphics.DrawString(cadastrante.Nome, font, brush, new PointF(x, y));
+
+                using (var ms = new MemoryStream())
+                {
+                    image.Save(ms, ImageFormat.Jpeg);
+                    ms.Seek(0, SeekOrigin.Begin);
+                    var fileBytes = ms.ToArray();
+                    var contentType = "image/jpeg";
+
+                    return File(fileBytes, contentType);
+                }
+            }
         }
 
         public IActionResult Create()
@@ -64,15 +84,9 @@ namespace Atividade1.Controllers
         [HttpPost]
         public IActionResult Create(Cadastrante cadastrante)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Cadastrantes.Add(cadastrante);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }
-
-            ViewBag.EventoID = new SelectList(_context.Eventos.OrderBy(e => e.Nome), "EventoID", "Nome", cadastrante.EventoID);
-            return View(cadastrante);
+            _context.Add(cadastrante);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public IActionResult Edit(int id)
@@ -88,24 +102,9 @@ namespace Atividade1.Controllers
         [HttpPost]
         public IActionResult Edit(Cadastrante cadastrante)
         {
-            if (!ModelState.IsValid)
-            {
-                var erros = ModelState.Values.SelectMany(v => v.Errors).ToList();
-                ViewBag.Erros = erros;
-                ViewBag.EventoID = new SelectList(_context.Eventos.OrderBy(e => e.Nome), "EventoID", "Nome", cadastrante.EventoID);
-                return View(cadastrante);
-            }
-
-            var original = _context.Cadastrantes.FirstOrDefault(c => c.CadastranteID == cadastrante.CadastranteID);
-            if (original == null)
-                return NotFound();
-
-            original.Nome = cadastrante.Nome;
-            original.EventoID = cadastrante.EventoID;
-
+            _context.Entry(cadastrante).State = EntityState.Modified;
             _context.SaveChanges();
-
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
 
