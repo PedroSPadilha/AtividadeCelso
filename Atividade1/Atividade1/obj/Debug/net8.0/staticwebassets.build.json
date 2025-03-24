@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZuwTwLt1YCdnsSjzWhYwzqpAulVhDrikGaSUHPAdXuo=",
+  "Hash": "OdO0YCLUibQrG9TJPE0jZzMys0ncheyswIB0L1k/X+o=",
   "Source": "Atividade1",
   "BasePath": "_content/Atividade1",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "SourceId": "Atividade1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\",
+      "BasePath": "_content/Atividade1",
+      "RelativePath": "Image/certificado#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aaolc4j3hb",
+      "Integrity": "MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\certificado.jpg"
     },
     {
       "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\js\\site.js",
@@ -1343,7 +1364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 17:17:13 GMT"
+          "Value": "Sun, 23 Mar 2025 17:55:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1380,7 +1401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 17:17:13 GMT"
+          "Value": "Sun, 23 Mar 2025 17:55:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1425,7 +1446,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 17:17:13 GMT"
+          "Value": "Sun, 23 Mar 2025 17:55:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1470,7 +1491,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 17:17:13 GMT"
+          "Value": "Sun, 23 Mar 2025 17:55:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "Image/certificado.aaolc4j3hb.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10660581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 17:52:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aaolc4j3hb"
+        },
+        {
+          "Name": "label",
+          "Value": "Image/certificado.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA="
+        }
+      ]
+    },
+    {
+      "Route": "Image/certificado.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10660581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 17:52:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA="
         }
       ]
     },

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Atividade1.Models.Cadastrante>
+
+@{
+    ViewData["Title"] = "Lista de Cadastrantes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Cadastrante</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Evento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Email</td>
+                <td>@item.Evento?.Nome</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.CadastranteID" class="btn btn-info btn-sm">Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@item.CadastranteID" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.CadastranteID" class="btn btn-danger btn-sm">Excluir</a>
+                    <a asp-action="MostrarCertificado"
+                       asp-route-eventoId="@ViewBag.EventoID"
+                       asp-route-cadastranteId="@item.CadastranteID"
+                       class="btn btn-success btn-sm"
+                       target="_blank">
+                        Certificado
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
