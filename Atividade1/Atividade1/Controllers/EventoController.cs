@@ -60,22 +60,25 @@ public class EventoController : Controller
 
     public IActionResult Delete(int id)
     {
-        var evento = _context.Eventos
-            .Include(e => e.Cadastrantes)
-            .FirstOrDefault(e => e.EventoID == id);
-
+        var evento = _context.Eventos.Find(id);
         if (evento == null)
+        {
             return NotFound();
-
+        }
         return View(evento);
     }
 
     [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
     public IActionResult DeleteConfirmed(int id)
     {
         var evento = _context.Eventos.Find(id);
-        _context.Eventos.Remove(evento);
-        _context.SaveChanges();
+        if (evento != null)
+        {
+            _context.Eventos.Remove(evento);
+            _context.SaveChanges();
+        }
         return RedirectToAction(nameof(Index));
     }
+
 }

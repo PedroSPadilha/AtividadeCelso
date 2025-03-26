@@ -1,44 +1,63 @@
 ﻿@model IEnumerable<Atividade1.Models.Cadastrante>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 @{
     ViewData["Title"] = "Lista de Cadastrantes";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="container mt-4">
+    <h1 class="text-center text-primary">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Novo Cadastrante</a>
-</p>
+    <div class="text-end mb-3">
+        <a asp-action="Create" class="btn btn-success shadow-sm">
+            <i class="bi bi-person-plus"></i> Novo Cadastrante
+        </a>
+    </div>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Evento</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Nome</td>
-                <td>@item.Email</td>
-                <td>@item.Evento?.Nome</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.CadastranteID" class="btn btn-info btn-sm">Detalhes</a>
-                    <a asp-action="Edit" asp-route-id="@item.CadastranteID" class="btn btn-warning btn-sm">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@item.CadastranteID" class="btn btn-danger btn-sm">Excluir</a>
-                    <a asp-action="MostrarCertificado"
-                       asp-route-eventoId="@ViewBag.EventoID"
-                       asp-route-cadastranteId="@item.CadastranteID"
-                       class="btn btn-success btn-sm"
-                       target="_blank">
-                        Certificado
-                    </a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Evento</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Email</td>
+                        <td>@item.Evento?.Nome</td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@item.CadastranteID" class="btn btn-info btn-sm mx-1">
+                                <i class="bi bi-eye"></i> Detalhes
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.CadastranteID" class="btn btn-warning btn-sm mx-1">
+                                <i class="bi bi-pencil"></i> Editar
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.CadastranteID" class="btn btn-danger btn-sm mx-1">
+                                <i class="bi bi-trash"></i> Excluir
+                            </a>
+                            <a asp-action="MostrarCertificado"
+                               asp-route-eventoId="@ViewBag.EventoID"
+                               asp-route-cadastranteId="@item.CadastranteID"
+                               class="btn btn-success btn-sm mx-1"
+                               target="_blank">
+                                <i class="bi bi-file-earmark-text"></i> Certificado
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Bootstrap JS (Opcional, apenas se precisar de componentes interativos como dropdowns) -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

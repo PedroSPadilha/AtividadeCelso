@@ -4,29 +4,56 @@
     ViewData["Title"] = "Lista de Eventos";
 }
 
-<h1>Eventos</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Adicionar Novo</a>
-</p>
+    <div class="container mt-4">
+        <h1 class="text-center text-primary">Eventos</h1>
 
-@foreach (var item in Model)
-{
-    <div class="card card-header m-1 p-1">
-        <div class="bg-transparent p-1">
-            <h4>
-                @item.Nome
-                <span class="btn btn-info" style="float:right">
-                    <small>@(item.Cadastrantes?.Count() ?? 0) participantes</small>
-                </span>
-            </h4>
-            <span>
-                <small>
-                    <a asp-action="Edit" asp-route-id="@item.EventoID">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.EventoID">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.EventoID">Excluir</a>
-                </small>
-            </span>
+        <div class="text-end mb-3">
+            <a asp-action="Create" class="btn btn-primary">
+                Adicionar Novo
+            </a>
         </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="card shadow-sm mb-3">
+                <div class="card-header bg-light">
+                    <h4 class="d-flex justify-content-between align-items-center">
+                        <span>@item.Nome</span>
+                        <span class="badge bg-info text-dark p-2">
+                            @(item.Cadastrantes?.Count() ?? 0) participantes
+                        </span>
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            <a asp-action="Edit" asp-route-id="@item.EventoID" class="btn btn-warning btn-sm">
+                                Editar
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.EventoID" class="btn btn-info btn-sm mx-2">
+                                Detalhes
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.EventoID" class="btn btn-danger btn-sm">
+                                Excluir
+                            </a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
-}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

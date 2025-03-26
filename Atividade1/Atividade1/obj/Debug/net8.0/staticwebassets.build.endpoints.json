@@ -167,6 +167,88 @@
       ]
     },
     {
+      "Route": "Image/certificado2.3qlq9rrory.jpg",
+      "AssetFile": "Image/certificado2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10685972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:16:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3qlq9rrory"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="
+        },
+        {
+          "Name": "label",
+          "Value": "Image/certificado2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Image/certificado2.jpg",
+      "AssetFile": "Image/certificado2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10685972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 22:16:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
