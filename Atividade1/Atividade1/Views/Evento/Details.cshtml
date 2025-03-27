@@ -30,11 +30,34 @@
             </dl>
         </div>
 
+        @if (Model.Cadastrantes != null && Model.Cadastrantes.Any())
+        {
+            <div class="card mt-4 p-3">
+                <h5>Cadastrantes</h5>
+                <hr />
+                <ul class="list-group">
+                    @foreach (var cadastrante in Model.Cadastrantes)
+                    {
+                        <li class="list-group-item">@cadastrante.Nome</li>
+                    }
+                </ul>
+            </div>
+        }
+        else
+        {
+            <div class="card mt-4 p-3">
+                <h5>Cadastrantes</h5>
+                <hr />
+                <p class="text-muted">Nenhum cadastrante associado a este evento.</p>
+            </div>
+        }
+
         <div class="text-center mt-3">
             <a asp-action="Edit" asp-route-id="@Model?.EventoID" class="btn btn-warning">Editar</a> |
             <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
         </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
