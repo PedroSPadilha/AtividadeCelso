@@ -1,7 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\Image\certificado.jpg
-wwwroot\Image\certificado2.jpg
+wwwroot\Image\certificadoBackup.jpg
+wwwroot\Image\certificadoBackup1.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

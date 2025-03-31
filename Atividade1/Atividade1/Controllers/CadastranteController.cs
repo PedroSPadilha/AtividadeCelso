@@ -44,10 +44,7 @@ namespace Atividade1.Controllers
             if (cadastrante == null)
                 return NotFound("Cadastrante não encontrado.");
 
-            if (cadastrante.EventoID != 1)
-                return BadRequest("Esse evento não tem certificado.");
-
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image", "certificado.jpg");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image", "certificadoBackup1.jpg");
 
             if (!System.IO.File.Exists(path))
                 return NotFound("Certificado não encontrado.");
@@ -55,13 +52,21 @@ namespace Atividade1.Controllers
             using (var image = Image.FromFile(path))
             using (var graphics = Graphics.FromImage(image))
             {
-                var font = new Font("Arial", 25, FontStyle.Bold);
+                var fontNome = new Font("Arial", 25, FontStyle.Bold);
+                var fontEvento = new Font("Arial", 20, FontStyle.Regular);
                 var brush = new SolidBrush(Color.Black);
 
-                float x = 3700f;
-                float y = 3600f;
+                // Cadastrante
+                float xNome = 420f;
+                float yNome = 450f;
 
-                graphics.DrawString(cadastrante.Nome, font, brush, new PointF(x, y));
+                // Evento
+                float xEvento = 260f;
+                float yEvento = 550f;
+
+                graphics.DrawString(cadastrante.Nome, fontNome, brush, new PointF(xNome, yNome));
+
+                graphics.DrawString(cadastrante.Evento.Nome, fontEvento, brush, new PointF(xEvento, yEvento));
 
                 using (var ms = new MemoryStream())
                 {
@@ -74,6 +79,7 @@ namespace Atividade1.Controllers
                 }
             }
         }
+
 
         public IActionResult Create()
         {

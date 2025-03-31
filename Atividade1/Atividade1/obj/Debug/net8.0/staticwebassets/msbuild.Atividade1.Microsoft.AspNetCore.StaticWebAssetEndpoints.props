@@ -36,29 +36,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 19:31:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificado.aaolc4j3hb.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificado.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificadoBackup.aaolc4j3hb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificadoBackup.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aaolc4j3hb"},{"Name":"integrity","Value":"sha256-MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA="},{"Name":"label","Value":"_content/Atividade1/Image/certificado.jpg"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aaolc4j3hb"},{"Name":"integrity","Value":"sha256-MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA="},{"Name":"label","Value":"_content/Atividade1/Image/certificadoBackup.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10660581"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 19:33:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificado.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificado.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificadoBackup.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificadoBackup.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10660581"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 19:33:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificado2.3qlq9rrory.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificado2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificadoBackup1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificadoBackup1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3qlq9rrory"},{"Name":"integrity","Value":"sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="},{"Name":"label","Value":"_content/Atividade1/Image/certificado2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10685972"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 19:33:09 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1\u002B3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"195389"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221\u002B3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 22:40:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificado2.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificado2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Atividade1/Image/certificadoBackup1.tn1vsfs8fx.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Image\certificadoBackup1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10685972"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 19:33:09 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tn1vsfs8fx"},{"Name":"integrity","Value":"sha256-1\u002B3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU="},{"Name":"label","Value":"_content/Atividade1/Image/certificadoBackup1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"195389"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221\u002B3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 22:40:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Atividade1/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

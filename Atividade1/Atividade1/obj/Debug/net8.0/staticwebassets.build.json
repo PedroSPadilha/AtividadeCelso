@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B4QL3NVRanZwKxpj/PgwDg678lB+0eENSAJCZKvsdzA=",
+  "Hash": "ehxN6KHJWDtJUrMe3bRKqQMBXR/AT+SXIixZUvJbdII=",
   "Source": "Atividade1",
   "BasePath": "_content/Atividade1",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup.jpg",
       "SourceId": "Atividade1",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\",
       "BasePath": "_content/Atividade1",
-      "RelativePath": "Image/certificado#[.{fingerprint}]?.jpg",
+      "RelativePath": "Image/certificadoBackup#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,15 +119,15 @@
       "Integrity": "MnoTB2/DfYYeOScyy34oPyMWkEAOtq1TgtLkLcL0BxA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Image\\certificado.jpg"
+      "OriginalItemSpec": "wwwroot\\Image\\certificadoBackup.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado2.jpg",
+      "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup1.jpg",
       "SourceId": "Atividade1",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\",
       "BasePath": "_content/Atividade1",
-      "RelativePath": "Image/certificado2#[.{fingerprint}]?.jpg",
+      "RelativePath": "Image/certificadoBackup1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -136,11 +136,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3qlq9rrory",
-      "Integrity": "e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=",
+      "Fingerprint": "tn1vsfs8fx",
+      "Integrity": "1+3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Image\\certificado2.jpg"
+      "OriginalItemSpec": "wwwroot\\Image\\certificadoBackup1.jpg"
     },
     {
       "Identity": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\js\\site.js",
@@ -1691,8 +1691,8 @@
       ]
     },
     {
-      "Route": "Image/certificado.aaolc4j3hb.jpg",
-      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "Route": "Image/certificadoBackup.aaolc4j3hb.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1727,7 +1727,7 @@
         },
         {
           "Name": "label",
-          "Value": "Image/certificado.jpg"
+          "Value": "Image/certificadoBackup.jpg"
         },
         {
           "Name": "integrity",
@@ -1736,8 +1736,8 @@
       ]
     },
     {
-      "Route": "Image/certificado.jpg",
-      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado.jpg",
+      "Route": "Image/certificadoBackup.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1773,8 +1773,8 @@
       ]
     },
     {
-      "Route": "Image/certificado2.3qlq9rrory.jpg",
-      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado2.jpg",
+      "Route": "Image/certificadoBackup1.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1783,7 +1783,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10685972"
+          "Value": "195389"
         },
         {
           "Name": "Content-Type",
@@ -1791,56 +1791,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\""
+          "Value": "\"1+3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 19:33:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3qlq9rrory"
-        },
-        {
-          "Name": "label",
-          "Value": "Image/certificado2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="
-        }
-      ]
-    },
-    {
-      "Route": "Image/certificado2.jpg",
-      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificado2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10685972"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 19:33:09 GMT"
+          "Value": "Thu, 27 Mar 2025 22:40:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1850,7 +1805,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e5WYrIEFdbYAzZ3/UEgUj9LCLXHXv3MGcxsM4iivc1U="
+          "Value": "sha256-1+3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU="
+        }
+      ]
+    },
+    {
+      "Route": "Image/certificadoBackup1.tn1vsfs8fx.jpg",
+      "AssetFile": "C:\\Users\\Pedro\\Desktop\\Facul\\Celso\\AtividadeCelso\\Atividade1\\Atividade1\\wwwroot\\Image\\certificadoBackup1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1+3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:40:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tn1vsfs8fx"
+        },
+        {
+          "Name": "label",
+          "Value": "Image/certificadoBackup1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1+3BnKk8tECHqcIemeDFg8VqAPzv6hV1Neohy6lLXnU="
         }
       ]
     },
